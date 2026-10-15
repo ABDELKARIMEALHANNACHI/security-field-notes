@@ -1,33 +1,19 @@
-# Incident Media Archive
+# Media Register
 
-## Purpose
+## 1. The Guardian: Supermarket director discusses spoiled food
 
-Collect and document media that helps explain the incident.
+- URL: https://www.theguardian.com/world/2026/oct/12/cyber-attack-defrosts-refrigerators-france-supermarket-chains-intermarche-cooperative-u
+- Duration: 1:05
+- Use: understand reported operational consequences.
+- Limitation: the footage does not independently establish the initial access method.
 
-## Source Types
+## 2. Reuters Connect / Anadolu Agency: Supermarkets restock
 
-- Original news reports
-- News videos and broadcasts
-- Official advisory illustrations
-- Vendor diagrams and technical documentation
-- Researcher presentations
-- Original diagrams created for this case study
+- URL: https://www.reutersconnect.com/item/french-supermarkets-in-nancy-restock-after-cyberattacks-disrupt-refrigeration-systems/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XQU5BQ0FBVklERU8yMDI2MTAxNDQyNzUzMTIy
+- Date: 14 October 2026
+- Use: visual context for operational recovery and discarded products.
+- Rights: licensable media. Link to the original; do not copy or redistribute without permission.
 
-## Media Register
+## Image policy
 
-For every item, record:
-
-- Title
-- Publisher or creator
-- Original URL
-- Publication date
-- Relevant timestamp, if a video
-- License or reuse permission
-- What it actually demonstrates
-- What it does not establish
-
-## Evidence Rules
-
-Do not treat illustrative images as evidence of the actual incident.
-Do not infer technical details from footage that does not show them.
-Link to copyrighted media instead of copying it without permission.
+Prefer original publisher pages and official diagrams. Record the source, publication date, license, and what each image actually demonstrates. Label illustrative images as illustrative.

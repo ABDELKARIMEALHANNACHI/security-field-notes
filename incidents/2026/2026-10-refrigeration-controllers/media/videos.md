@@ -1,24 +1,24 @@
 # Video Sources
 
-## Video 1: Supermarket refrigeration incident
+## The Guardian
 
-- Publisher: The Guardian
+- Title: French supermarket director apologises after cyber-attack spoils fresh and frozen food
+- Duration: 1:05
 - URL: https://www.theguardian.com/world/2026/oct/12/cyber-attack-defrosts-refrigerators-france-supermarket-chains-intermarche-cooperative-u
-- Relevant timestamp: To be reviewed
-- What it supports: Reported operational impact and interviews.
-- What it does not establish: The complete technical attack chain.
+- Technical value: documents reported consequences and interview statements.
+- Limitation: does not prove the complete technical attack chain.
 
-## Video 2: BBC News
+## Reuters Connect / Anadolu Agency
 
-- Original URL: To be verified
-- Relevant timestamp: To be reviewed
-- Main claims: To be documented
-- Technical relevance: To be assessed
+- Title: French supermarkets in Nancy restock after cyberattacks disrupt refrigeration systems
+- Date: 14 October 2026
+- URL: https://www.reutersconnect.com/item/french-supermarkets-in-nancy-restock-after-cyberattacks-disrupt-refrigeration-systems/dGFnOnJldXRlcnMuY29tLDIwMjY6bmV3c21sX09XQU5BQ0FBVklERU8yMDI2MTAxNDQyNzUzMTIy
+- Technical value: operational context during recovery.
+- Rights: licensable; do not redistribute without permission.
 
-## Review Checklist
+## Review checklist
 
-- [ ] Verify the original publisher and URL.
-- [ ] Record the publication date.
-- [ ] Note relevant timestamps.
-- [ ] Compare claims against primary sources.
-- [ ] Distinguish eyewitness footage from technical evidence.
+- [ ] Watched the original publisher's video.
+- [ ] Recorded relevant timestamps.
+- [ ] Distinguished what is visible from what is inferred.
+- [ ] Checked claims against the official advisory.

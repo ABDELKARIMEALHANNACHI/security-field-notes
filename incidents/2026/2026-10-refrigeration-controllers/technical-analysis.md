@@ -1,72 +1,80 @@
-# Technical Analysis: Refrigeration Controller Incident
+# Technical Analysis
 
-## 1. Executive Summary
+## 1. System context
 
-What happened, which systems were affected, and why does it matter?
+Remote refrigeration controllers manage equipment used to maintain temperature and defrost behavior. Depending on the installation, authorized technicians or operators may administer them remotely.
 
-## 2. Evidence Classification
+A compromise can affect both digital integrity and physical operations.
 
-| Claim | Classification | Source | Confidence |
-|---|---|---|---|
-| | Confirmed / Inferred / Unknown | | |
+## 2. Trust boundaries
 
-## 3. System Architecture
+Potential boundaries to investigate:
 
-Identify the relevant devices, networks, management interfaces, and physical processes.
+1. Public internet to remote management interface.
+2. Remote management network to controller.
+3. Contractor account to store equipment.
+4. Business IT network to operational technology.
+5. Controller configuration to physical refrigeration behavior.
 
-## 4. Trust Boundaries
+The actual architecture varies by installation and must be verified rather than assumed.
 
-Map the boundaries between external networks, management systems, controllers, and operational equipment.
+## 3. Potential attack path
 
-## 5. Attack Surface
+```text
+External network
+      |
+      v
+Remote management path
+      |
+      v
+Unauthorized access or control
+      |
+      v
+Configuration changes
+      |
+      v
+Physical process affected
+```
 
-Document exposed services, remote management paths, authentication mechanisms, and relevant vulnerabilities.
+**Status:** Hypothesis model. The public advisory confirms compromises but does not establish every step of this sequence.
 
-Do not assume that a possible entry point was the actual entry point.
+## 4. Confirmed findings
 
-## 6. Attack-Chain Analysis
+CERT-FR identifies compromised remote refrigeration controllers in several product families and warns that direct internet exposure of management interfaces is poor security practice.
 
-For each proposed step, document:
-- Preconditions
-- Required attacker capability
-- Available evidence
-- Alternative explanations
-- Confidence level
+It recommends removing public exposure, restoring compromised equipment, using protected access, reconfiguring systems, and applying vendor-recommended security measures.
 
-## 7. Root Cause
+## 5. Hypotheses to investigate
 
-Separate confirmed causes from contributing factors and unresolved questions.
+Possible factors in a specific installation might include:
 
-## 8. Impact
+- Directly reachable management services.
+- Weak, default, or shared credentials.
+- Unsupported firmware.
+- Excessive remote permissions.
+- Inadequate network segmentation.
+- Insufficient monitoring of configuration changes.
 
-Evaluate confidentiality, integrity, availability, physical safety, financial loss, and operational disruption.
+These are investigation leads, not confirmed root causes for every affected system.
 
-Distinguish observed impact from potential impact.
+## 6. Impact
 
-## 9. Prevention
+- Integrity: unauthorized changes to controller settings.
+- Availability: refrigeration may fail to maintain intended conditions.
+- Operational impact: discarded stock, service interruption, recovery costs.
+- Safety: possible food-safety consequences.
 
-Recommend controls tied to the risks actually identified.
+Distinguish reported impact from independently verified impact.
 
-## 10. Detection and Response
+## 7. Evidence required for a stronger conclusion
 
-Identify useful logs, alerts, containment steps, recovery procedures, and evidence-preservation needs.
+- Controller and firmware inventory.
+- Network exposure and firewall configuration.
+- Authentication and remote-access logs, where available.
+- Configuration history and approved baselines.
+- Vendor advisories relevant to the exact device and version.
+- Incident-response findings establishing the initial access method.
 
-## 11. Bug Bounty Lessons
+## 8. Conclusion
 
-Identify transferable lessons for authorized web and API security testing.
-
-## 12. Conclusion
-
-### Confirmed Findings
-
-### Inferred Explanations
-
-### Unknowns
-
-### Priority Recommendations
-
-### Limitations
-
-## 13. Sources
-
-List primary advisories, vendor documentation, official statements, and reliable reporting.
+The confirmed lesson is that remote management of physical systems must be protected and monitored. The public evidence supports urgent exposure reduction and recovery measures, but it is not sufficient to reconstruct every attack step or assign one root cause to all affected installations.
